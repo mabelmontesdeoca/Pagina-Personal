@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de {% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+
+ {% block headers %}
+ <h1>Acerca de </h1>
+ <span class="subheading">Biografia</span> 
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">   
+      <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg '%}" alt="">
+      </div>
+      <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Grecia Montesdeoca Franco</h2>   
+        <p>Hola, soy Grecia Mabel Montesdeoca Franco, tengo 21 años,vivo en Pedernales, actualmente me encuentro estudiando en la Universidad Tecnica de Manabi.</p>
+        <p>Me encuentro estudiando en la Facultad de Ciencias Informaticas, en la carrera de Ingenieria en Sistemas.</p>
+      </div>
+    </div>  
+  </div>
+{% endblock %}
+
+
